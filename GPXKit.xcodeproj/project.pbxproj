@@ -264,6 +264,7 @@
 		9C4DC67A1DF5DE7F00FCF61F /* GPX+MapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GPX+MapKit.h"; sourceTree = "<group>"; };
 		9C4DC67B1DF5DE7F00FCF61F /* GPX+MapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GPX+MapKit.m"; sourceTree = "<group>"; };
 		9C4DC67C1DF5DE7F00FCF61F /* sample.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.gpx; sourceTree = "<group>"; };
+		9C7B52231DF710E5008A30DE /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,6 +432,7 @@
 				9C4DC5A11DF5D0A600FCF61F /* GPXKit.podspec */,
 				9C4DC5A21DF5D0A600FCF61F /* LICENSE */,
 				9C4DC5A31DF5D0A600FCF61F /* README.md */,
+				9C7B52231DF710E5008A30DE /* .travis.yml */,
 			);
 			name = Metadata;
 			sourceTree = "<group>";
