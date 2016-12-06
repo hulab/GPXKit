@@ -10,9 +10,18 @@ install:
 - gem install cocoapods
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 script:
-- set -o pipefail && xcodebuild -project GPXKit.xcodeproj -scheme $FRAMEWORK_NAME -sdk iphonesimulator10.0 -configuration Release | xcpretty -c
+- set -o pipefail && xcodebuild -project GPXKit.xcodeproj -scheme $FRAMEWORK_NAME
+  -sdk iphonesimulator10.0 -configuration Release | xcpretty -c
 - pod lib lint --quick
 before_deploy:
 - carthage build --no-skip-current
 - carthage archive $FRAMEWORK_NAME
-
+deploy:
+  provider: releases
+  api_key:
+    secure: mAC4krYC6Hzjf7JbuxAN6hTmEpnpkQmEdm3ApK8Kd8aqbZXntgA7Lq9MLMGCcDjyxfTvcQh5/qGVLgvhbE/sBgofRayJ+D9E2yhzdpZPMXe6be6k0H042maG9zxRTrkFOkK5qNmN4xHkKYQd/Sf14uLtzhYfPmBCrGfAcwy6ysmZ9U54HQOwQo7/vGY4IE//bQFCYdamduGKIOpvBTj1kntEPKoitzPfa3ZHUqgsJiczJYucNPAG5QaQGNsCme8M3q6ZYnsQmuvW9eL3NQVFMkOZCMy2MhAyK4Ac7+/+m9eLWwF1sq4p7Q1HfBtQWGeYfBtmgtNJvQ/4bcWHKDoc6C322cHYyF4e4HKZE3yresEb9zPK3+rQmKiymHSURZ/VR+bNTS/j/pLKmfCTiuB5higVCHKzVuKu+1Is4C7ycpqEX8SrrVSpuzU2jm8rVsbDaNfFPfZjs0gTT8fzRpBeisi1pK1sXvPUznHtzPeL1h4JsNbGBZ45jSewLEaYyhc8TkQaDxgaTulUp7wlJQpIl9qc+kIrjE4bZfur4kGxwYBkid6hqHDYVfe8kkH6SZDoJtoWmZO3p9E79pKxTqO2FLIIWpckwBWzhC/2+fxHS8dC7OUx0oUpjzTQIpmfvuAl5+5W35TXVaHQdREUCtyB9xZsXazIwbDUxpGtuXanRqk=
+  file: $FRAMEWORK_NAME.framework.zip
+  skip_cleanup: true
+  on:
+    repo: hulab/GPXKit
+    tags: true
