@@ -110,6 +110,18 @@
 		9C4DC6131DF5D4DE00FCF61F /* GPXBounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C4DC5441DF5D06300FCF61F /* GPXBounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C4DC6141DF5D4E000FCF61F /* GPXAuthor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C4DC5421DF5D06300FCF61F /* GPXAuthor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C4DC6151DF5D66900FCF61F /* GPXKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C4DC52A1DF5A39200FCF61F /* GPXKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C4DC6381DF5D84800FCF61F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DC6371DF5D84800FCF61F /* AppDelegate.swift */; };
+		9C4DC63E1DF5D84800FCF61F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C4DC63D1DF5D84800FCF61F /* Assets.xcassets */; };
+		9C4DC6411DF5D84800FCF61F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C4DC63F1DF5D84800FCF61F /* Main.storyboard */; };
+		9C4DC6531DF5D8B200FCF61F /* GPXDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DC6471DF5D8B200FCF61F /* GPXDocument.swift */; };
+		9C4DC6541DF5D8B200FCF61F /* GPXMapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DC6481DF5D8B200FCF61F /* GPXMapKit.swift */; };
+		9C4DC6551DF5D8B200FCF61F /* GPXRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DC6491DF5D8B200FCF61F /* GPXRootViewController.swift */; };
+		9C4DC6561DF5D8B200FCF61F /* GPXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DC64A1DF5D8B200FCF61F /* GPXViewController.swift */; };
+		9C4DC6571DF5D8B200FCF61F /* NSSlider+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DC64E1DF5D8B200FCF61F /* NSSlider+Animation.m */; };
+		9C4DC6581DF5D8B200FCF61F /* GPXPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DC6501DF5D8B200FCF61F /* GPXPlayer.swift */; };
+		9C4DC6591DF5D8B200FCF61F /* GPXPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DC6511DF5D8B200FCF61F /* GPXPlayerViewController.swift */; };
+		9C4DC65C1DF5D94400FCF61F /* GPXKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4DC5CF1DF5D3D500FCF61F /* GPXKit.framework */; };
+		9C4DC65D1DF5D94400FCF61F /* GPXKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4DC5CF1DF5D3D500FCF61F /* GPXKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9C4DC6671DF5DE4C00FCF61F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DC6661DF5DE4C00FCF61F /* main.m */; };
 		9C4DC66A1DF5DE4C00FCF61F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DC6691DF5DE4C00FCF61F /* AppDelegate.m */; };
 		9C4DC66D1DF5DE4C00FCF61F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DC66C1DF5DE4C00FCF61F /* ViewController.m */; };
@@ -153,6 +165,13 @@
 			remoteGlobalIDString = 9C4DC5CE1DF5D3D500FCF61F;
 			remoteInfo = GPXKit;
 		};
+		9C4DC65A1DF5D8D300FCF61F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C4DC51E1DF5A39100FCF61F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C4DC5CE1DF5D3D500FCF61F;
+			remoteInfo = "GPXKit-macOS";
+		};
 		9C4DC67F1DF5DE8C00FCF61F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9C4DC51E1DF5A39100FCF61F /* Project object */;
@@ -170,6 +189,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		9C4DC65E1DF5D94400FCF61F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9C4DC65D1DF5D94400FCF61F /* GPXKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C4DC6871DF5DECA00FCF61F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +281,20 @@
 		9C4DC5C71DF5D38F00FCF61F /* GPXLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXLog.m; sourceTree = "<group>"; };
 		9C4DC5CF1DF5D3D500FCF61F /* GPXKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPXKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C4DC5D71DF5D3D500FCF61F /* GPXKit-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPXKit-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4DC6351DF5D84800FCF61F /* GPX Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPX Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C4DC6371DF5D84800FCF61F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C4DC63D1DF5D84800FCF61F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C4DC6401DF5D84800FCF61F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C4DC6421DF5D84800FCF61F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C4DC6471DF5D8B200FCF61F /* GPXDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXDocument.swift; sourceTree = "<group>"; };
+		9C4DC6481DF5D8B200FCF61F /* GPXMapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXMapKit.swift; sourceTree = "<group>"; };
+		9C4DC6491DF5D8B200FCF61F /* GPXRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXRootViewController.swift; sourceTree = "<group>"; };
+		9C4DC64A1DF5D8B200FCF61F /* GPXViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXViewController.swift; sourceTree = "<group>"; };
+		9C4DC64C1DF5D8B200FCF61F /* GPX Viewer-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GPX Viewer-Bridging-Header.h"; sourceTree = "<group>"; };
+		9C4DC64D1DF5D8B200FCF61F /* NSSlider+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSlider+Animation.h"; sourceTree = "<group>"; };
+		9C4DC64E1DF5D8B200FCF61F /* NSSlider+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSlider+Animation.m"; sourceTree = "<group>"; };
+		9C4DC6501DF5D8B200FCF61F /* GPXPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXPlayer.swift; sourceTree = "<group>"; };
+		9C4DC6511DF5D8B200FCF61F /* GPXPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPXPlayerViewController.swift; sourceTree = "<group>"; };
 		9C4DC6631DF5DE4B00FCF61F /* GPXLogger-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPXLogger-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C4DC6661DF5DE4C00FCF61F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C4DC6681DF5DE4C00FCF61F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -264,7 +308,7 @@
 		9C4DC67A1DF5DE7F00FCF61F /* GPX+MapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GPX+MapKit.h"; sourceTree = "<group>"; };
 		9C4DC67B1DF5DE7F00FCF61F /* GPX+MapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GPX+MapKit.m"; sourceTree = "<group>"; };
 		9C4DC67C1DF5DE7F00FCF61F /* sample.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.gpx; sourceTree = "<group>"; };
-		9C7B52231DF710E5008A30DE /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		9C7B52241DF71B50008A30DE /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +357,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C4DC6321DF5D84800FCF61F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4DC65C1DF5D94400FCF61F /* GPXKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C4DC6601DF5DE4B00FCF61F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +385,7 @@
 				9C4DC5291DF5A39100FCF61F /* GPXKit */,
 				9C4DC5AA1DF5D11A00FCF61F /* GPXLogger */,
 				9C4DC5341DF5A39200FCF61F /* Tests */,
+				9C4DC6361DF5D84800FCF61F /* GPX Viewer */,
 				9C4DC6641DF5DE4C00FCF61F /* GPXLogger-Example */,
 				9C4DC5281DF5A39100FCF61F /* Products */,
 			);
@@ -347,6 +400,7 @@
 				9C4DC5B11DF5D11A00FCF61F /* GPXLoggerTests.xctest */,
 				9C4DC5CF1DF5D3D500FCF61F /* GPXKit.framework */,
 				9C4DC5D71DF5D3D500FCF61F /* GPXKit-macOSTests.xctest */,
+				9C4DC6351DF5D84800FCF61F /* GPX Viewer.app */,
 				9C4DC6631DF5DE4B00FCF61F /* GPXLogger-Example.app */,
 			);
 			name = Products;
@@ -432,7 +486,7 @@
 				9C4DC5A11DF5D0A600FCF61F /* GPXKit.podspec */,
 				9C4DC5A21DF5D0A600FCF61F /* LICENSE */,
 				9C4DC5A31DF5D0A600FCF61F /* README.md */,
-				9C7B52231DF710E5008A30DE /* .travis.yml */,
+				9C7B52241DF71B50008A30DE /* .travis.yml */,
 			);
 			name = Metadata;
 			sourceTree = "<group>";
@@ -446,6 +500,42 @@
 				9C4DC5AC1DF5D11A00FCF61F /* Info.plist */,
 			);
 			path = GPXLogger;
+			sourceTree = "<group>";
+		};
+		9C4DC6361DF5D84800FCF61F /* GPX Viewer */ = {
+			isa = PBXGroup;
+			children = (
+				9C4DC6371DF5D84800FCF61F /* AppDelegate.swift */,
+				9C4DC6471DF5D8B200FCF61F /* GPXDocument.swift */,
+				9C4DC6481DF5D8B200FCF61F /* GPXMapKit.swift */,
+				9C4DC6491DF5D8B200FCF61F /* GPXRootViewController.swift */,
+				9C4DC64A1DF5D8B200FCF61F /* GPXViewController.swift */,
+				9C4DC64B1DF5D8B200FCF61F /* NSSliderExtensions */,
+				9C4DC64F1DF5D8B200FCF61F /* Player */,
+				9C4DC63D1DF5D84800FCF61F /* Assets.xcassets */,
+				9C4DC63F1DF5D84800FCF61F /* Main.storyboard */,
+				9C4DC6421DF5D84800FCF61F /* Info.plist */,
+			);
+			path = "GPX Viewer";
+			sourceTree = "<group>";
+		};
+		9C4DC64B1DF5D8B200FCF61F /* NSSliderExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C4DC64C1DF5D8B200FCF61F /* GPX Viewer-Bridging-Header.h */,
+				9C4DC64D1DF5D8B200FCF61F /* NSSlider+Animation.h */,
+				9C4DC64E1DF5D8B200FCF61F /* NSSlider+Animation.m */,
+			);
+			path = NSSliderExtensions;
+			sourceTree = "<group>";
+		};
+		9C4DC64F1DF5D8B200FCF61F /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				9C4DC6501DF5D8B200FCF61F /* GPXPlayer.swift */,
+				9C4DC6511DF5D8B200FCF61F /* GPXPlayerViewController.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 		9C4DC6641DF5DE4C00FCF61F /* GPXLogger-Example */ = {
@@ -661,6 +751,25 @@
 			productReference = 9C4DC5D71DF5D3D500FCF61F /* GPXKit-macOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9C4DC6341DF5D84800FCF61F /* GPX Viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C4DC6431DF5D84800FCF61F /* Build configuration list for PBXNativeTarget "GPX Viewer" */;
+			buildPhases = (
+				9C4DC6311DF5D84800FCF61F /* Sources */,
+				9C4DC6321DF5D84800FCF61F /* Frameworks */,
+				9C4DC6331DF5D84800FCF61F /* Resources */,
+				9C4DC65E1DF5D94400FCF61F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C4DC65B1DF5D8D300FCF61F /* PBXTargetDependency */,
+			);
+			name = "GPX Viewer";
+			productName = "GPX Viewer";
+			productReference = 9C4DC6351DF5D84800FCF61F /* GPX Viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
 		9C4DC6621DF5DE4B00FCF61F /* GPXLogger-Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C4DC6771DF5DE4C00FCF61F /* Build configuration list for PBXNativeTarget "GPXLogger-Example" */;
@@ -721,6 +830,11 @@
 						DevelopmentTeam = Q95SQ3447E;
 						ProvisioningStyle = Automatic;
 					};
+					9C4DC6341DF5D84800FCF61F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = Q95SQ3447E;
+						ProvisioningStyle = Automatic;
+					};
 					9C4DC6621DF5DE4B00FCF61F = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = Q95SQ3447E;
@@ -747,6 +861,7 @@
 				9C4DC5D61DF5D3D500FCF61F /* GPXKit-macOSTests */,
 				9C4DC5A81DF5D11A00FCF61F /* GPXLogger */,
 				9C4DC5B01DF5D11A00FCF61F /* GPXLoggerTests */,
+				9C4DC6341DF5D84800FCF61F /* GPX Viewer */,
 				9C4DC6621DF5DE4B00FCF61F /* GPXLogger-Example */,
 			);
 		};
@@ -794,6 +909,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C4DC5E71DF5D41700FCF61F /* mystic_basin_trail.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C4DC6331DF5D84800FCF61F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4DC63E1DF5D84800FCF61F /* Assets.xcassets in Resources */,
+				9C4DC6411DF5D84800FCF61F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -901,6 +1025,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9C4DC6311DF5D84800FCF61F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4DC6591DF5D8B200FCF61F /* GPXPlayerViewController.swift in Sources */,
+				9C4DC6551DF5D8B200FCF61F /* GPXRootViewController.swift in Sources */,
+				9C4DC6561DF5D8B200FCF61F /* GPXViewController.swift in Sources */,
+				9C4DC6381DF5D84800FCF61F /* AppDelegate.swift in Sources */,
+				9C4DC6571DF5D8B200FCF61F /* NSSlider+Animation.m in Sources */,
+				9C4DC6531DF5D8B200FCF61F /* GPXDocument.swift in Sources */,
+				9C4DC6581DF5D8B200FCF61F /* GPXPlayer.swift in Sources */,
+				9C4DC6541DF5D8B200FCF61F /* GPXMapKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C4DC65F1DF5DE4B00FCF61F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -935,6 +1074,11 @@
 			target = 9C4DC5CE1DF5D3D500FCF61F /* GPXKit-macOS */;
 			targetProxy = 9C4DC5D91DF5D3D500FCF61F /* PBXContainerItemProxy */;
 		};
+		9C4DC65B1DF5D8D300FCF61F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C4DC5CE1DF5D3D500FCF61F /* GPXKit-macOS */;
+			targetProxy = 9C4DC65A1DF5D8D300FCF61F /* PBXContainerItemProxy */;
+		};
 		9C4DC6801DF5DE8C00FCF61F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9C4DC5261DF5A39100FCF61F /* GPXKit-iOS */;
@@ -948,6 +1092,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9C4DC63F1DF5D84800FCF61F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C4DC6401DF5D84800FCF61F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		9C4DC66E1DF5DE4C00FCF61F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1253,6 +1405,47 @@
 			};
 			name = Release;
 		};
+		9C4DC6441DF5D84800FCF61F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q95SQ3447E;
+				INFOPLIST_FILE = "GPX Viewer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hulab.GPX-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "GPX Viewer/NSSliderExtensions/GPX Viewer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		9C4DC6451DF5D84800FCF61F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q95SQ3447E;
+				INFOPLIST_FILE = "GPX Viewer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hulab.GPX-Viewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "GPX Viewer/NSSliderExtensions/GPX Viewer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
 		9C4DC6781DF5DE4C00FCF61F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1339,6 +1532,15 @@
 			buildConfigurations = (
 				9C4DC5E41DF5D3D500FCF61F /* Debug */,
 				9C4DC5E51DF5D3D500FCF61F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C4DC6431DF5D84800FCF61F /* Build configuration list for PBXNativeTarget "GPX Viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C4DC6441DF5D84800FCF61F /* Debug */,
+				9C4DC6451DF5D84800FCF61F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
