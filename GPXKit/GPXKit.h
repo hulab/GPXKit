@@ -21,26 +21,26 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <GPXKit/GPXParser.h>
-#import <GPXKit/GPXConst.h>
-#import <GPXKit/GPXType.h>
-#import <GPXKit/GPXRoot.h>
-#import <GPXKit/GPXMetadata.h>
-#import <GPXKit/GPXWaypoint.h>
-#import <GPXKit/GPXRoutePoint.h>
-#import <GPXKit/GPXTrackPoint.h>
-#import <GPXKit/GPXRoute.h>
-#import <GPXKit/GPXTrack.h>
-#import <GPXKit/GPXExtensions.h>
-#import <GPXKit/GPXTrackSegment.h>
-#import <GPXKit/GPXCopyright.h>
-#import <GPXKit/GPXLink.h>
-#import <GPXKit/GPXEmail.h>
-#import <GPXKit/GPXPerson.h>
-#import <GPXKit/GPXAuthor.h>
-#import <GPXKit/GPXPoint.h>
-#import <GPXKit/GPXPointSegment.h>
-#import <GPXKit/GPXBounds.h>
+#import "GPXParser.h"
+#import "GPXConst.h"
+#import "GPXType.h"
+#import "GPXRoot.h"
+#import "GPXMetadata.h"
+#import "GPXWaypoint.h"
+#import "GPXRoutePoint.h"
+#import "GPXTrackPoint.h"
+#import "GPXRoute.h"
+#import "GPXTrack.h"
+#import "GPXExtensions.h"
+#import "GPXTrackSegment.h"
+#import "GPXCopyright.h"
+#import "GPXLink.h"
+#import "GPXEmail.h"
+#import "GPXPerson.h"
+#import "GPXAuthor.h"
+#import "GPXPoint.h"
+#import "GPXPointSegment.h"
+#import "GPXBounds.h"
 
 //! Project version number for GPX.
 FOUNDATION_EXPORT double GPXVersionNumber;

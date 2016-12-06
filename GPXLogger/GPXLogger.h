@@ -21,7 +21,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <GPXLogger/GPXLog.h>
+#import "GPXLog.h"
 
 //! Project version number for GPXLogger.
 FOUNDATION_EXPORT double GPXLoggerVersionNumber;

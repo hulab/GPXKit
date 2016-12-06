@@ -110,7 +110,7 @@ FOUNDATION_EXPORT void GPXSave(void) NS_SWIFT_NAME(GPX.save());
 /**
  Empty class for swift mapping.
  */
-@interface GPX
+@interface GPX : NSObject
 
 @end
 

@@ -18,14 +18,13 @@ Pod::Spec.new do |s|
   ### Subspecs
 
   s.subspec 'Core' do |ss|
-    ss.source_files = 'GPX/*.{h,m}'
+    ss.source_files = 'GPX/*.{h,m}', 'GPXKit/GPXKit.h'
     ss.private_header_files =   'GPX/GPXElementSubclass.h',
                                 'GPX/GPXXML.h'
   end
 
   s.subspec 'Logger' do |ss|
     ss.source_files = 'GPXLogger/*.{h,m}'
-    ss.exclude_files = 'GPXLogger/GPXLogger.h'
     ss.dependency 'GPXKit/Core'
   end
 end
