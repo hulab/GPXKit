@@ -21,98 +21,97 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+#import <GPXKit/GPXKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
-@class GPXMetadata;
-@class GPXWaypoint;
-@class GPXTrack;
-@class GPXTrackSegment;
-@class GPXTrackPoint;
-@class GPXRoute;
-@class GPXRoutePoint;
 
 /**
  Sets the GPX log file path.
 
  @param path The GPX file path.
  */
-extern void GPXSetPath(NSString *path) NS_SWIFT_NAME(GPX.set(path:));
+FOUNDATION_EXPORT void GPXSetPath(NSString *path) NS_SWIFT_NAME(GPX.set(path:));
 
 /**
  Gets the GPX log file path.
  
  @return The GPX file path.
  */
-extern NSString * _Nullable GPXPath(void) NS_SWIFT_NAME(GPX.path());
+FOUNDATION_EXPORT NSString * _Nullable GPXPath(void) NS_SWIFT_NAME(GPX.path());
 
 /**
  Sets the GPX file creator.
 
  @param creator The GPX file creator.
  */
-extern void GPXSetCreator(NSString *creator) NS_SWIFT_NAME(GPX.set(creator:));
+FOUNDATION_EXPORT void GPXSetCreator(NSString *creator) NS_SWIFT_NAME(GPX.set(creator:));
 
 /**
  Sets the GPX file version.
 
  @param version The GPX file version.
  */
-extern void GPXSetVersion(NSString *version) NS_SWIFT_NAME(GPX.set(version:));
+FOUNDATION_EXPORT void GPXSetVersion(NSString *version) NS_SWIFT_NAME(GPX.set(version:));
 
 /**
  Sets the GPX file metadata.
 
  @param metadata The GPX file metadata.
  */
-extern void GPXSetMetadata(GPXMetadata *metadata) NS_SWIFT_NAME(GPX.set(metadata:));
+FOUNDATION_EXPORT void GPXSetMetadata(GPXMetadata *metadata) NS_SWIFT_NAME(GPX.set(metadata:));
 
 /**
  Logs the given waypoint.
 
  @param waypoint The waypoint to log.
  */
-extern void GPXLogWaypoint(GPXWaypoint *waypoint) NS_SWIFT_NAME(GPX.log(waypoint:));
+FOUNDATION_EXPORT void GPXLogWaypoint(GPXWaypoint *waypoint) NS_SWIFT_NAME(GPX.log(waypoint:));
 
 /**
  Logs the given track.
 
  @param track The track to log.
  */
-extern void GPXLogTrack(GPXTrack *track) NS_SWIFT_NAME(GPX.log(track:));
+FOUNDATION_EXPORT void GPXLogTrack(GPXTrack *track) NS_SWIFT_NAME(GPX.log(track:));
 
 /**
  Logs the given track segment. If no track has been added, a new one will be created.
 
  @param segment The track segment to log.
  */
-extern void GPXLogSegment(GPXTrackSegment *segment) NS_SWIFT_NAME(GPX.log(segment:));
+FOUNDATION_EXPORT void GPXLogSegment(GPXTrackSegment *segment) NS_SWIFT_NAME(GPX.log(segment:));
 
 /**
  Logs the given track point. If no track segment has been added, a new one will be created.
 
  @param trackpoint The track point to log.
  */
-extern void GPXLogTrackpoint(GPXTrackPoint *trackpoint) NS_SWIFT_NAME(GPX.log(trackpoint:));
+FOUNDATION_EXPORT void GPXLogTrackpoint(GPXTrackPoint *trackpoint) NS_SWIFT_NAME(GPX.log(trackpoint:));
 
 /**
  Logs the given route.
 
  @param route The route to log.
  */
-extern void GPXLogRoute(GPXRoute *route) NS_SWIFT_NAME(GPX.log(route:));
+FOUNDATION_EXPORT void GPXLogRoute(GPXRoute *route) NS_SWIFT_NAME(GPX.log(route:));
 
 /**
  Logs the given route point. If no route has been added, a new one will be created.
 
  @param routepoint The route point to log.
  */
-extern void GPXLogRoutepoint(GPXRoutePoint *routepoint) NS_SWIFT_NAME(GPX.log(routepoint:));
+FOUNDATION_EXPORT void GPXLogRoutepoint(GPXRoutePoint *routepoint) NS_SWIFT_NAME(GPX.log(routepoint:));
 
 /**
  Saves the GPX log to disk.
  */
-extern void GPXSave(void) NS_SWIFT_NAME(GPX.save());
+FOUNDATION_EXPORT void GPXSave(void) NS_SWIFT_NAME(GPX.save());
+
+/**
+ Empty class for swift mapping.
+ */
+@interface GPX
+
+@end
 
 NS_ASSUME_NONNULL_END

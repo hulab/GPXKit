@@ -21,15 +21,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <GPXKit/GPXParser.h>
-#import <GPXKit/GPXRoot.h>
-#import <GPXKit/GPXMetadata.h>
-#import <GPXKit/GPXTrack.h>
-#import <GPXKit/GPXTrackSegment.h>
-#import <GPXKit/GPXTrackPoint.h>
-#import <GPXKit/GPXRoute.h>
-#import <GPXKit/GPXRoutePoint.h>
-
 #import "GPXLog.h"
 
 @interface GPXLog : NSObject
@@ -162,5 +153,9 @@ static GPXLog *sharedLog = nil;
         NSLog(@"%@", error);
     }
 }
+
+@end
+
+@implementation GPX
 
 @end
