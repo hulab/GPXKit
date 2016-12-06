@@ -15,7 +15,7 @@ GPXKit is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'GPXKit'
+pod 'GPXKit', :git => 'https://github.com/hulab/GPX.git'
 ```
 
 ## Usage
