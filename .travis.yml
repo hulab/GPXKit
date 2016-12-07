@@ -10,7 +10,7 @@ install:
 - gem install cocoapods
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 script:
-- set -o pipefail && xcodebuild -project GPXKit.xcodeproj -scheme 'GPXKit iOS' -sdk iphonesimulator -configuration Release -destination 'platform=iOS Simulator,id=7E35EE66-07F2-4EFB-93DC-72A069D5407E' clean build test | xcpretty -c
+- set -o pipefail && xcodebuild -project GPXKit.xcodeproj -scheme 'GPXKit iOS' -sdk iphonesimulator -configuration Release -destination 'platform=iOS Simulator,name=iPhone 7' clean build test | xcpretty -c
 before_deploy:
 - carthage build --no-skip-current
 - carthage archive $FRAMEWORK_NAME
